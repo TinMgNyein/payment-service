@@ -45,7 +45,7 @@ jobs:
         run: |
           docker build \
             -f deployment/Dockerfile.dev \
-            -t ghcr.io/zawthanoo/payment-service:${{ steps.tag-version.outputs.version }} \
+            -t ghcr.io/tinmgnyein/payment-service:${{ steps.tag-version.outputs.version }} \
             .
 
       - name: Push Docker Image
